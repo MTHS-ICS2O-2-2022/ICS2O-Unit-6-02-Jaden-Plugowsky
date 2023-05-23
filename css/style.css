@@ -22,9 +22,10 @@ a {
 
 .right-image {
   height: auto;
-  width: 250px;
-  float: right;
-  margin-right: 150px;
+  width: 30px;
+  margin-left: 37%;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
 .mdl-content {
@@ -47,6 +48,7 @@ a {
 
 .page-content-answer {
   font-size: 20px;
+  text-align: center;
 }
 
 #button-one {
