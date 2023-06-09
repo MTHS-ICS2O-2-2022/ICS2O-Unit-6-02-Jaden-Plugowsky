@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="My first website with local web storage" />
+    <meta
+      name="description"
+      content="My first website with local web storage"
+    />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Jaden Plugowsky" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +17,7 @@
     <!-- Change colours here at https://getmdl.io/customize/index.html -->
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css"
+      href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -22,7 +25,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <title>Cookie Clicker</title>
   </head>
-  <body>
+  <body onload="websiteLoaded()">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- Page content is below this div -->
@@ -35,17 +38,31 @@
       <main class="mdl-layout__content">
         <!-- Put non-header content HERE -->
         <br />
-        <div class="mdl-content">Click the cookie to get points. Points save across visits.</div>
+        <div class="mdl-content">
+          Click the cookie to get points. Points save across visits.
+        </div>
         <br />
         <div class="right-image">
-          <img src="./images/cookie.png" alt="cookie image" onclick="cookieClicked()" />
+          <img
+            src="./images/cookie.png"
+            alt="cookie image"
+            onclick="cookieClicked()"
+          />
         </div>
         <br />
         <br />
         <!-- Answer to be replaced using JS -->
         <div class="page-content-answer">
-          <div id="answer">You have clicked the cookie null times</div>
+          <div id="answer">You have clicked the cookie zero times.</div>
         </div>
+        <br />
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+          id="button-one"
+          onclick="resetClicks()"
+        >
+          Reset Clicks
+        </button>
       </main>
     </div>
   </body>

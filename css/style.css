@@ -1,5 +1,5 @@
 /* Created by: Jaden Plugowsky
-* Created on: March 2023
+* Created on: May 2023
 * This file contains the CSS for index.html
 */
 
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: lightcoral;
+  background-color: rgb(179 136 120);
 }
 
 a {
@@ -22,15 +22,15 @@ a {
 
 .right-image {
   height: auto;
-  width: 30px;
-  margin-left: 37%;
-  margin-right: auto;
-  margin-top: 50px;
+  width: auto;
+  float: auto;
+  margin-left: 40.5%;
 }
 
 .mdl-content {
   font-size: 30px;
   line-height: 30px;
+  text-align: center;
 }
 
 .mdl-layout__content {
@@ -47,12 +47,12 @@ a {
 }
 
 .page-content-answer {
-  font-size: 20px;
+  font-size: 50px;
   text-align: center;
 }
 
 #button-one {
-  margin-left: 60px;
+  margin-left: 46.5%; /* was 60px */
   margin-top: 10px;
 }
 
