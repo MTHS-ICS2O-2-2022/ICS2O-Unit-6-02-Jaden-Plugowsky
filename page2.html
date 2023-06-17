@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My first website with for loops" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Jaden Plugowsky" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Change colours here at https://getmdl.io/customize/index.html -->
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Sum Of n Natural Numbers Calculator</title>
+  </head>
+  <body onload="page2Loaded()" id="body-page2">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Page content is below this div -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title" id="header-fix"
+            >Sum Of n Natural Numbers Calculator</span
+          >
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <!-- Put non-header content HERE -->
+        <br />
+        <div id="right-image-page2">
+          <img src="./images/blackholehd.png" alt="black hole image" />
+        </div>
+        <div class="mdl-content">
+          Enter in a number and this program will add every natural number from
+          1 to that number, giving you the sum.
+        </div>
+        <br />
+        <div id="description">
+          Equation: (n / 2) * (n + 1)
+          <br />
+          Note: Does not accept or work with zero, negative numbers, or
+          decimals, as these are not considered natural numbers.
+        </div>
+        <br />
+        <!-- Numeric Textfield with Floating Label - Value of 'n' -->
+        <form action="#">
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*([0-9]+)?"
+              id="value-of-n"
+            />
+            <label class="mdl-textfield__label" for="value-of-n"
+              >Value of 'n'
+            </label>
+            <span class="mdl-textfield__error"
+              >Input is not a number or natural number!</span
+            >
+          </div>
+        </form>
+        <!-- Colored raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+          id="button-two"
+          onclick="calculatePressed()"
+        >
+          Calculate
+        </button>
+        <br />
+        <br />
+        <!-- Answer to be replaced using JS -->
+        <div class="page-content-answer">
+          <div id="answer-page2">You have not entered in data yet.</div>
+        </div>
+        <br />
+        <br />
+        <a href="./index.html">Back To Page 1</a>
+      </main>
+    </div>
+  </body>
+</html>
