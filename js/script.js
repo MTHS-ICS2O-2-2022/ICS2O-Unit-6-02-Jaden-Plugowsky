@@ -54,13 +54,15 @@ function calculatePressed() {
   } else {
     document.getElementById("answer-page2").innerHTML =
       "That input is not a natural number; it is either negative, zero, a decimal, or simply not a number."
-    localStorage.answerText = "That input is not a natural number; it is either negative, zero, a decimal, or simply not a number."
+    localStorage.answerText =
+      "That input is not a natural number; it is either negative, zero, a decimal, or simply not a number."
   }
 
   // Output
   if (valueOfN >= 1 && valueOfN % 1 == 0) {
     document.getElementById("answer-page2").innerHTML =
       "The sum of all the numbers from 1 to " + valueOfN + " is: " + answer
-    localStorage.answerText = "The sum of all the numbers from 1 to " + valueOfN + " is: " + answer
+    localStorage.answerText =
+      "The sum of all the numbers from 1 to " + valueOfN + " is: " + answer
   }
 }
